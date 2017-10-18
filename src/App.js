@@ -5,6 +5,8 @@ import BusinessList from './components/BusinessList/BusinessList';
 import SearchBar from './components/SearchBar/SearchBar';
 import {Yelp} from './util/Yelp';
 
+//const businesses = [];
+
 class App extends React.Component {
   constructor(props) {
     super(props);
