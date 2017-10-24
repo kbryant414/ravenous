@@ -11,7 +11,7 @@ export const Yelp = {
     { method: 'POST' }).then(response => {
       return response.json();
     }).then(jsonResponse => {
-      accessToken = jsonResponse.access_token
+      accessToken = jsonResponse.access_token;
     });
   },
 
@@ -35,7 +35,7 @@ export const Yelp = {
             city: business.location.city,
             state: business.location.state,
             zipCode: business.location.zip_code,
-            category: business.category[0].title,
+            category: business.category,
             rating: business.rating,
             reviewCount: business.review_count
           }));
